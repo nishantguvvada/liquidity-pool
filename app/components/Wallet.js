@@ -12,7 +12,7 @@ import "@solana/wallet-adapter-react-ui/styles.css";
 
 export const Wallet = () => {
     return (
-        <div className="flex flex-col gap-4 items-center justify-center h-screen">
+        <div className="flex flex-col gap-4 items-center justify-center mt-10 h-3/4">
             <WalletMultiButtonDynamic/>
             <WalletDisconnectButtonDynamic/>
         </div>

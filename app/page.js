@@ -9,13 +9,13 @@ export default function Home() {
   return (
     <div>
       <ConnectionProvider endpoint={endpoint}>
-        <WalletProvider wallets={[]}>
+        <WalletProvider wallets={[]} autoConnect>
           <WalletModalProvider>
             <Wallet/>
+            <Token/>
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
-      <Token/>
     </div>
   )
 }
